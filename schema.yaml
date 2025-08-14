@@ -1,0 +1,4 @@
+COLUMNS:
+ text: object
+TARGET_COLUMN:
+ generated: int64
