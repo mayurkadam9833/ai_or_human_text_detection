@@ -2,11 +2,11 @@ artifacts_root: artifacts
 
 data_ingestion:
  root_dir: artifacts/data_ingestion
- source_url: https://github.com/mayurkadam9833/Datasets/raw/refs/heads/main/AI_HUMAN_TEXT.zip
- local_data_file: artifacts/data_ingestion/AI_HUMAN_TEXT.zip
+ source_url: https://github.com/mayurkadam9833/Datasets/raw/refs/heads/main/AI_generated_text_data.zip
+ local_data_file: artifacts/data_ingestion/AI_generated_text_data.zip
  unzip_dir: artifacts/data_ingestion
 
 data_validation:
  root_dir: artifacts/data_validation
- unzip_data_path: artifacts/data_ingestion/AI_HUMAN_TEXT.csv
+ unzip_data_path: artifacts/data_ingestion/AI_generated_text_data.csv
  STATUS_FILE_PATH: artifacts/data_validation/validation_status.txt
