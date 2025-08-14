@@ -2,6 +2,7 @@ import os
 import zipfile
 from urllib.request import urlretrieve
 from src.ai_or_human_text.logging import logger
+from src.ai_or_human_text.utils.common import get_size
 from src.ai_or_human_text.entity.config_entity import DataIngestionConfig
 
 class DataIngestion:
@@ -18,7 +19,7 @@ class DataIngestion:
                 logger.info(f"{filename} downloaded sucessfully from following header:\n {header}")
 
             else:
-                logger.info(f"file is already exists...")
+                logger.info(f"file is already exists of size {get_size(self.config.local_data_file)}")
         
         except Exception as e:
             raise e
